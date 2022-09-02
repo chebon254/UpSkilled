@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UpSkilled</title>
 
+     <!-- == Favicon == -->
+     <link rel="shortcut icon" href="Assets/media/images/favicon.png" sizes="128x128">
+     <link rel="shortcut icon" href="Assets/media/images/favicon.png" sizes="92x92">
+
     <!-- == Style == -->
     <link rel="stylesheet" href="Assets/css/style.css">
 
@@ -16,10 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
-
-    <!-- == Favicon == -->
-    <link rel="shortcut icon" href="Assets/media/images/favicon.png" sizes="128x128">
-    <link rel="shortcut icon" href="Assets/media/images/favicon.png" sizes="92x92">
 
 </head>
 <body>
@@ -34,6 +34,7 @@
                         <a href="#" class="nav-link">Products</a>
                         <a href="#" class="nav-link">Pricing</a>
                         <a href="#" class="nav-link">Blog</a>
+                        <a href="#" class="nav-link nav-link-bar"><i class="fa-solid fa-bars-staggered"></i></a>
                     </div>
                 <!-- Account -->
                     <div class="account-access">
@@ -56,8 +57,8 @@
                             <h1>Make your <br>  future better</h1>
                             <p>We have many courses from all professionals around the world</p>
                             <div class="banner-btns">
-                                <button class="get-started">Get Started <span><i class="fa-solid fa-chevron-right"></i></span></button>
-                                <button class="play-video"><span><i class="fa-solid fa-play"></i></span> Play our video</button>
+                                <button class="get-started">Get Started <span class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></span></button>
+                                <button class="play-video"><span class="arrow-icon"><i class="fa-solid fa-play"></i></span> Play our video</button>
                             </div>
                             <div class="underline"></div>
                             <div class="partner-banner">
@@ -84,9 +85,758 @@
                         </div>
                     </div>
                 </section>
-            <section>
+            <!-- Benefits -->
+                <section class="benefits">
+                    <div class="benefits-container container">
+                        <div class="benefit-content">
+                            <div class="one">
+                                <h1>Our <br> Benefits</h1>
+                            </div>
+                            <div class="two">
+                                <div class="benefit-icon">
+                                    <img src="Assets/media/images/infinity.png" alt="Icon Image">
+                                </div>
+                                <h2>Lifetime Access</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="two">
+                                <div class="benefit-icon">
+                                    <img src="Assets/media/images/message.png" alt="Icon Image">
+                                </div>
+                                <h2>Lifetime Access</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="two">
+                                <div class="benefit-icon">
+                                    <img src="Assets/media/images/wifi.png" alt="Icon Image">
+                                </div>
+                                <h2>Lifetime Access</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="two">
+                                <div class="benefit-icon">
+                                    <img src="Assets/media/images/gift.png" alt="Icon Image">
+                                </div>
+                                <h2>Lifetime Access</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- Process -->
+                <section class="process">
+                    <div class="process-back"></div>
+                    <div class="process-container container">
+                        <div class="process-text">
+                            <span>Our Process</span>
+                            <h1>This Is The Course <br> Process For You</h1>
+                            <p>This is the course process that you will go through if you subscribe on our platform.</p>
+                            <button>Learn More<span class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                        <div class="process-stages">
+                            <div class="stage">
+                                <span class="stage-number">1</span>
+                                <img src="Assets/media/images/starsearch.png" alt="Star Search">
+                                <h2>Find the course <br> you need</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="stage">
+                                <span class="stage-number">2</span>
+                                <img src="Assets/media/images/calender.png" alt="Star Search">
+                                <h2>Book your course<br>now don't late</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="stage">
+                                <span class="stage-number">3</span>
+                                <img src="Assets/media/images/compute.png" alt="Star Search">
+                                <h2>Follow all the <br> course you take</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="stage">
+                                <span class="stage-number">4</span>
+                                <img src="Assets/media/images/listings.png" alt="Star Search">
+                                <h2>Get Your Online<br> Certificate</h2>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- Courses -->
+                <section class="courses">
+                    <div class="courses-container container">
+                        <div class="courses-head">
+                            <h3>Our Portfolio</h3>
+                            <h1>Our Done Works</h1>
+                        </div>
 
-            </section>
+                        <div class="tab-btns" id="myBtnContainer">
+                            <button class="btn active" onclick="filterSelection('all')"> <i class="fas fa-bars"></i> ALL CATEGORIES</button>
+                            <button class="btn" onclick="filterSelection('web-design')"><i class="fas fa-computer"></i> WEB DESIGN</button>
+                            <button class="btn" onclick="filterSelection('javascript')"><i class="fab fa-js"></i> JAVASCRIPT</button>
+                            <button class="btn" onclick="filterSelection('php')"><i class="fas fa-rocket"></i> ILLUSTRATION</button>
+                            <button class="btn" onclick="filterSelection('youtube')"><i class="fab fa-youtube"></i> YOUTUBE</button>
+                        </div>
+
+                        <div class="row">
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column youtube">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">YouTube</span>
+                                        <span class="price">$42</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column php">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">PHP</span>
+                                        <span class="price">$48</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column php">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">PHP</span>
+                                        <span class="price">$48</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column php">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">PHP</span>
+                                        <span class="price">$48</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column php">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">PHP</span>
+                                        <span class="price">$48</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column javascript">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">JavaScript</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column javascript">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">JavaScript</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column javascript">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">JavaScript</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column javascript">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">JavaScript</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column javascript">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">JavaScript</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column javascript">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">JavaScript</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column web-design">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">Web Design</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column web-design">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">Web Design</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column web-design">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">Web Design</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column web-design">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">Web Design</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column web-design">
+                                <div class="content">
+                                    <img src="Assets/media/images/Web-Hosting-Explained.png" alt="Course">
+                                    <div class="course-info">
+                                        <span class="status">Web Design</span>
+                                        <span class="price">$29</span>
+                                    </div>
+                                    <div class="course-title-info">
+                                        <div class="course-title">
+                                            <h2>A beginners guide to start painting</h2>
+                                        </div>
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span class="five-star-rating" title="View Comments"><a href="#">(24)</a></span>
+                                        </div>
+                                        <div class="enroll">
+                                            <span>Buy Now</span>
+                                            <span>|</span>
+                                            <span><a href="#">Subscribe</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dot-container">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </section>
+            <!-- Process -->
+                <section class="process">
+                    <div class="process-container container">
+                        <div class="process-text">
+                            <span>Our Process</span>
+                            <h1>This Is The Course <br> Process For You</h1>
+                            <p>This is the course process that you will go through if you subscribe on our platform.</p>
+                            <button>Learn More<span class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                        <div class="process-image">
+                            <img src="Assets/media/images/circle image.png" alt="circle" height="300px">
+                        </div>
+                    </div>
+                </section>
+            <!-- Process -->
+                <section class="process">
+                    <div class="process-container container">
+                        <div class="process-image">
+                            <img src="Assets/media/images/meet.jpg" alt="circle" height="300px">
+                        </div>
+                        <div class="process-text">
+                            <span>Our Process</span>
+                            <h1>This Is The Course <br> Process For You</h1>
+                            <p>This is the course process that you will go through if you subscribe on our platform.</p>
+                            <button>Learn More<span class="arrow-icon"><i class="fa-solid fa-chevron-right"></i></span></button>
+                        </div>
+                    </div>
+                </section>
         </main>
     <!-- == || Main == -->
     <!-- == Footer == -->
@@ -98,7 +848,7 @@
     <!-- == || Footer == -->
 
     <!-- == Cursor == -->
-    <div class="cursor"><i class="fa-solid fa-location-arrow"></i></div>
+    <!-- <div class="cursor"><i class="fa-solid fa-location-arrow"></i></div> -->
 
     <!-- == Script == -->
     <script src="Assets/js/script.js"></script>
